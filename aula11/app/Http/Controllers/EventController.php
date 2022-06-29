@@ -74,5 +74,26 @@ class EventController extends Controller
         return redirect('dashboard')->with('msg', 'Evento excluido com sucesso! ');
         
     }
+    public function edit($id){
+        $event = Event::findOrFail($id);
+
+        return view('events.edit', ['event' => $event]);
+    }
+    public function update(Request $request){
+
+       Event::findOrFail($request->id)->update($request->all());
+ 
+       return redirect('dashboard')->with('msg', 'Evento editado com sucesso! ');
+       
+}
+public function joinEvent($id){
+    $user = auth()->user();
+ 
+    $user->eventsAsParticipant()->attach($id);
+ 
+    $event = Event::findOrFail($id);
+ 
+    return redirect('/dashboard')->with('msg', 'Sua presença esta formada: '.$event->title);
+ }
 }
 

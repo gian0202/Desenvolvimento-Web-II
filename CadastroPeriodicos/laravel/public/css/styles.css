@@ -1,0 +1,222 @@
+* {
+    font-family: 'Roboto';
+}
+
+h1{
+    color: black;
+}
+
+#info-container .already-joined-msg{
+    margin: 15px 0;
+    color: #004085;
+    background-color: #CCE5FF;
+    border: 1px solid #B8DAFF;
+    padding: 10px;
+    width: 275;
+}
+#navbar img {
+    width: 40px;
+}
+body{
+    min-width: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+header{
+    background-color: #FFF;
+    border-bottom: 1px solid #ccc;
+}
+.row{
+    margin: 0;
+}
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    text-align: center;
+    border: 1px solid #C3E6CB;
+}
+.container-fluid{
+padding: 0;
+}
+.btn-primary{
+    background-color: #E3ACB7;
+    border: 2px solid #C47C8A;
+   
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #A6495B;
+    border-color: #C28008;
+}
+
+#navbar{
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 0;
+}
+#navbar a{
+    font-size: 14px;
+    color: #757575; 
+}
+#navbar a:hover{
+    font-size: 14px;
+    color: rgba(209, 6, 33, 0.925)
+}
+
+
+#search-container{
+    background-image: url("../img/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+#search-container input .placeholder{
+color: black;
+}
+
+
+#search-container h1{
+    color: rgba(204, 218, 83, 0.747);
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#events-container{
+    padding: 50px;
+}
+
+#events-container h2{
+    margin-bottom: 10px;
+
+}
+#events-container .subtitle{
+    color: #f008a2;
+    margin-bottom: 30px;
+}
+
+#cards-container{
+    display: flex;
+}
+
+#events-container .card{
+    flex: 1 1 0;
+    max-width: 15%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}   
+#events-container img{
+ max-height: 200px;
+ max-width: 200px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+.card .card-date{
+font-size: 12px;
+color: #ccc
+}
+.card .card-title{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.card-participants{
+    font-size: 14px;
+    color: #757575
+}
+
+footer{
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+#event-create-container{
+    padding: 30px;
+
+}
+#event-create-container label{
+    font-weight: bold;
+}
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea{
+    font-size: 12px;
+}
+
+#image-container,
+#info-container{
+    margin-top: 30p;
+}
+#image-container{
+    border-radius: 10px;
+}
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+#info-container p{
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+}
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color:rgba(250, 68, 83, 0.747);
+    margin-right: 9px;
+}
+
+#info-container #event-submit{
+    margin: 20px 0; 
+}
+#items-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li{
+display: flex;
+}
+
+.dashboard-title-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th{
+    width: 30px;
+}
+
+.dashboard-events-container form{
+   
+    display: inline-block;
+}
